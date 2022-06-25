@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Musashino ENT</title>
+    <meta name="title" content="Musashino ENT">
+    <meta name="description" content="Ear, Nose , Throat, Doctor, English-speaking, Tokyo, 鼻, 耳, 喉, 医者, 口, 東京">
+    <link rel="stylesheet" href="Homepage.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="Script/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!-- top part heading -->
+    <header>
+      <a href="index.html"><img src="Images/Home Page/Logo.png" alt=""></a>
+      <p class="header0"><span lang="jp">むさしの耳鼻科</span><span class="ENtitle" lang="en">Musashino ENT&nbsp;</span>
+        <span class="header1"><b><span lang="jp">矢野医院</span><span class="ENtitle2" lang="en">Yano Clinic</span></b></span></p>
+<!-- Language Swap -->
+    <select id="lang-switch">
+        <option class="langswitch-content" value="en">EN</option>
+        <option class="langswitch-content" value="jp" selected>JPN</option>
+    </select>
+<!-- Submenu heading -->
+    <div class="dropdown" style="float:right;">
+     <button class="dropbtn">&#x2630;</button>
+     <div class="dropdown-content">
+       <a href="profile.html"><span lang="jp">&#x25B7; 病院紹介</span><span class="ENdropdown" lang="en">&#x25B7; Hospital Profile</span></a>
+       <a href="treatment.html"><span lang="jp">&#x25B7; 利用可能な治療</span><span class="ENdropdown" lang="en">&#x25B7; Treatment</span></a>
+       <a href="first_time_visit.html"><span lang="jp">&#x25B7; 初診の方へ</span><span class="ENdropdown" lang="en">&#x25B7; First Time Visit</span></a>
+       <a href="faq.html"><span lang="jp">&#x25B7; FAQ</span><span class="ENdropdown" lang="en">&#x25B7; FAQ</span></a>
+       <a href="announcements.html"><span lang="jp">&#x25B7; お知らせ</span><span class="ENdropdown" lang="en">&#x25B7; Announcement</span></a>
+     </div>
+     </div>
+    </header>
+
+<!-- middle header -->
+    <div id="headerpic"></div>
+    <div id="name">
+      <p class="column" id="hospitalname"><span lang="jp">むさしの耳鼻科</span><span lang="en">Musahino ENT</span></p>
+      <p class="column" id="phone">TEL. 0422-52-3932</p>
+    </div>
+
+<!-- 3 pictures -->
+    <div id="pic">
+      <img class="album" src="Images/Home Page/Photo 1.png" alt="">
+      <img class="album" src="Images/Home Page/Photo 2.png" alt="">
+      <img class="album" src="Images/Home Page/Photo 3.png" alt="">
+    </div>
+
+<!-- First Notice -->
+    <div class="notice">
+      <div class="titlebar">
+        <p><span lang="jp">コロナウイルスの安全対策</span>
+		       <span lang="en">Coronavirus Safety Precaution</span></p>
+      </div>
+      <div class="noticeContent">
+        <p><span lang="jp">パンデミックが続いているため、 むさしの耳鼻科はコロナウイルスに対する最高レ
+          ベルの安全対策を維持することが重要です。 私たちのコミュニティの安全を確保する
+          ために、私たちが実施しているすべての安全対策を注意深く確認してください。詳しく
+          はこちらへ</span>
+		       <span lang="en">Due to the ongoing pandemic, It is crucial for Musashino ENT to maintain
+         the highest level of safety precautions for the coronavirus. To ensure the safety of
+         our community, please carefully review all the safety measures we have in place.</span></p>
+      </div>
+      <div class="noticeButton" id="faqButton" lang="jp">
+        <a href="Coronavirus Safety Precaution/JP.pdf">▷ 詳しくはこちらへ</a>
+      </div>
+      <div class="noticeButton" id="faqButton" lang="en">
+        <a href="Coronavirus Safety Precaution/EN.pdf">▷ Click here for more</a>
+      </div>
+    </div>
+
+<!-- 2nd Notice -->
+    <div class="notice">
+      <div class="titlebar">
+        <p><span lang="jp">コロナウイルス治療</span>
+		       <span lang="en">Coronavirus Treatment</span></p>
+      </div>
+      <div class="noticeContent">
+        <p><span lang="jp">コロナウイルスのパンデミックが続き、私たちのコミュニティが再開し始めると、コ
+          ロナウイルスに対する健康に気を配ることが重要になります。  むさしの耳鼻科では
+          、コロナウイルスワクチン接種とコロナウイルス治療のためのPCR検査の両方を提供し
+          ています。詳しくはこちらへ</span>
+		       <span lang="en">As the coronavirus pandemic continues and our communities begin to reopen,
+          it is important for us to take care of our health against the coronavirus. Here in Musashino
+          ENT, we offer both coronavirus vaccination and PCR test for the coronavirus treatment.</span></p>
+      </div>
+      <div class="noticeButton" id="treatmentButton" lang="jp">
+        <a href="Coronavirus Treatment/JP.pdf">▷ 詳しくはこちらへ</a>
+      </div>
+      <div class="noticeButton" id="treatmentButton" lang="en">
+        <a href="Coronavirus Treatment/EN.pdf">▷ Click here for more</a>
+      </div>
+    </div>
+
+<!-- 3rd Notice -->
+    <div class="notice">
+      <div class="titlebar">
+        <p><span lang="jp">お知らせ</span>
+		       <span lang="en">Announcement</span></p>
+      </div>
+  <!-- Announcement Notice block -->
+      <div class="noticeContent">
+        <div class="announcementBlock">
+         <div class="Announcement1">
+           <div class="announcementDate">
+             <p><b>2021/06/08</b></p>
+           </div>
+              <div class="announcementContent">
+                <p>
+                <span lang="jp">熱があり、受診希望の方は、あらかじめお電話ください。</span>
+                <span lang="en">If you have a fever and would like to see a doctor, please call us in advance.</span>
+               </p>
+              </div>
+         </div>
+    <!-- Copy only the above block if the content is 1 date per box, i.e you've separate box field for the text -->
+        </div>
+        <div class="announcementBlock">
+           <div class="Announcement1">
+             <div class="announcementDate">
+               <b>2021/04/20</b>
+             </div>
+               <div class="announcementContent">
+                 <span lang="jp">接種券が届いた方を対象に新型コロナウイルスワクチン接種の電話予約を始めています。</span>
+		             <span lang="en">We have started telephone reservations for the new coronavirus vaccinations, for those who have received the vaccination ticket.</span>
+               </div>
+           </div>
+        </div>
+      </div>
+  <!-- Copy the entire Announcement Notice block if you need more than 2 announcement headings in 1 box field -->
+   <!-- Notice button -->
+      <div class="noticeButton" id="announcementButton">
+        <a href="announcements.html">
+           <span lang="jp">▷ 詳しくはこちらへ</span>
+		       <span lang="en">▷ Click here for more</span>
+        </a>
+      </div>
+    </div>
+
+<!-- Interactive Map -->
+    <div id="map">
+      <p class="address">
+        <span lang="jp">〒180-0013<br>
+        東京都武蔵野市西久保３丁目７−１１</span>
+		    <span lang="en">〒180-00133-7-11<br> Nishikubo, Musashino-shi, Tokyo</span>
+		  </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d4518.377372899917!2d139.5605486526313!3d35.712768856095884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e3!4m0!4m5!1s0x6018efa9c7155385%3A0x661cd47409a22d43!2s3-ch%C5%8Dme-7-11%20Nishikubo%2C%20Musashino%2C%20Tokyo%20180-0013!3m2!1d35.7128247!2d139.5620004!5e0!3m2!1sen!2sjp!4v1623508942823!5m2!1sen!2sjp" width="100%" height="480px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+<!-- Schedule -->
+    <div class="Scheduleimg">
+       <img id="JPN_calendar" src="Images/Home Page/JPN Calendar.png" alt="" style="max-width:100%;height:auto;">
+       <img id="JPN_schedule" src="Images/Home Page/JPN Schedule.png" alt="" style="max-width:100%;height:auto;">
+    </div>
+
+<!-- Link table -->
+     <table id="linktable" style="width: 100%">
+      <tr>
+        <th class="tableheader" rowspan="2">
+          <span lang="jp">病院</span>
+          <span class="ENheader" lang="en">Hospital</span><br>
+          <span class="tablehira"><span lang="jp">について</span>
+          <span class="ENheader2" lang="en">Information</span></span></th>
+        <td class="tablelink"><a href="profile.html">▷ <span lang="jp">病院紹介</span><span class="ENsubheader" lang="en">Hospital Profile</span></a></td>
+        <td class="tablelink"><a href="first_time_visit.html">▷ <span lang="jp">初診の方へ</span><span class="ENsubheader"  lang="en">First Time Visit</span></a></td>
+      <tr>
+        <td class="tablelink"><a href="treatment.html">▷ <span lang="jp">利用可能な治療</span><span class="ENsubheader" lang="en">Available Treatment</span></a></td>
+        <td class="tablelink"><a href="faq.html">▷ FAQ</a></td>
+     </table>
+
+     <table id="linktable2" style="width: 100%">
+      <tr>
+        <td class="tablelink"><a href="profile.html">▷ <span lang="jp">病院紹介</span><span class="ENsubheader" lang="en">Hospital Profile</span></a></td>
+      <tr>
+        <td class="tablelink"><a href="treatment.html">▷ <span lang="jp">利用可能な治療</span><span class="ENsubheader" lang="en">Available Treatment</span></a></td>
+      <tr>
+        <td class="tablelink"><a href="first_time_visit.html">▷ <span lang="jp">初診の方へ</span><span class="ENsubheader"  lang="en">First Time Visit</span></a></td>
+      <tr>
+        <td class="tablelink"><a href="faq.html">▷ FAQ</a></td>
+     </table>
+
+<!-- Bottom Heading -->
+    <div id="bottomHeading">
+      <p>Copyright© むさしの耳鼻科 Musashino E.N.T.</p>
+    </div>
+
+  </body>
+</html>

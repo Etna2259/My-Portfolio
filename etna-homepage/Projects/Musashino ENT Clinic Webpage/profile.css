@@ -1,0 +1,464 @@
+html {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+/* top part heading */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 2.1em;
+  max-width: 100%;
+}
+
+header img {
+  width: 2em;
+  height: 2em;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.header0 {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  font-size: 0.8em;
+  color: #000000;
+}
+
+.header1 {
+  font-size: 1.2em;
+  color: #000000;
+}
+
+@media only screen and (max-device-width: 900px) {
+  .header0 {
+    display: none;
+  }
+  .header1 {
+    display: none;
+  }
+}
+
+
+.header2 {
+  display: flex;
+  align-items: center;
+  font-size: 1em;
+  color: #737373;
+}
+
+/* Language Menu */
+#lang-switch {
+  position: relative;
+  top: 10%;
+  font-size: 0.5em;
+  width: auto;
+  height: 2em;
+}
+
+/* Submenu heading */
+.dropbtn {
+	background-color: transparent;
+	color: #02CD02;
+	margin-top: -20%;
+	font-size: 1.9em;
+	border: none;
+  cursor: pointer;
+	font-weight: bold;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #737373;
+  top: 100%;
+  right: 0;
+  width: 10em;
+  box-shadow: 0em 0.2em 1em 0em rgba(0,0,0,0.2);
+	z-index: 1;
+	opacity: 0.7;
+}
+
+.ENdropdown {
+  font-size: 0.8em;
+}
+
+.dropdown-content a {
+  display: flex;
+	color: white;
+	padding: 0.5em 0.7em;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	border-bottom: 2px solid white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.dropdown-content a:link {
+  color: white;
+}
+
+.dropdown-content a:visited {
+  color: white;
+}
+
+.dropdown-content a:active {
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  width: 10em;
+  font-size: 1em;
+	font-weight: bold;
+	color: white;
+}
+
+/* middle header */
+@media only screen and (min-device-width: 900px) {
+#headerpic {
+  width: 100%;
+  background-image: url('Images/Home Page/Header.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+  display: block;
+ }
+}
+
+
+#name {
+  background-color: #02CD02;
+  display: flex;
+  align-items: center;
+  height: 4em;
+  max-width: 100%;
+}
+
+.column {
+  flex: 50%;
+  width: 100%;
+}
+
+#hospitalname {
+  margin-left: 0.8em;
+  font-size: 1.2em;
+  color: #FFFFFF;
+}
+
+#phone {
+  border-left: solid white 2px;
+  padding-left: 0.6em;
+  font-size: 1.1em;
+  color: #FFFFFF;
+}
+
+.profile_header {
+ margin:auto;
+  width: 80%;
+  height: 106px;
+  background-color: gray;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+}
+.profile {
+  margin: auto;
+  box-sizing: border-box;
+  border: 3px solid gray;
+  text-align: center;
+  width: 80%;
+  height: 80px;
+  position: relative;
+  margin-top: 40px;
+}
+.text {
+  margin: auto;
+  width: 80%;
+  height: 86px;
+  position: relative;
+  margin-bottom: 90px;
+}
+.text p {
+  margin-bottom: -40px;
+
+
+}
+.photo img {
+  display: block;
+  padding-right: 95%;
+  padding-left: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 77%;
+  margin-bottom: 40px;
+}
+
+
+/* Title */
+.Title {
+  border: 0.1em solid #737373;
+  margin-top: 1em;
+  display: flex;
+  background-color: white;
+  position: relative;
+  left: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 80%;
+  font-size: 1.2em;
+  color: #737373;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+@media only screen and (max-device-width: 500px) {
+	.Title {
+		font-size: 1em;
+	}
+
+}
+
+.topTitle {
+  border: 0.1em solid #737373;
+  margin-top: 1em;
+  display: flex;
+  background-color: #737373;
+  position: relative;
+  left: 10%;
+  justify-content: center;
+  align-items: center;
+  height: 2em;
+  width: 80%;
+  font-size: 1.2em;
+  color: white;
+  margin-bottom: 1em;
+}
+
+/* Text Content */
+
+.textContent {
+  position: relative;
+  left: 10%;
+  display: flex;
+  width: 80%;
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+/* Director Note */
+
+.directorimg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* List box */
+@media screen and (min-width: 900px) {
+ .boxRow {
+   display: flex;
+   max-width: 80%;
+   align-content: space-between;
+   align-items: center;
+   height: auto;
+   gap: 12%;
+ }
+}
+
+@media screen and (max-width: 899px) {
+ .boxRow {
+   position: relative;
+   align-items: center;
+   flex-direction: column;
+   display: flex;
+   width: 100%;
+   gap: 0.5em;
+ }
+}
+
+@media screen and (min-width: 900px) {
+.galleryContainer {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: 18%;
+  height: 15em;
+  width: 48%;
+  margin-bottom: 0.5em;
+ }
+}
+
+@media screen and (max-width: 899px) {
+.galleryContainer {
+  float: left;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 55%;
+ }
+}
+
+@media screen and (max-width: 670px) {
+.galleryContainer {
+  float: left;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  width: 70%;
+ }
+}
+
+@media screen and (min-width: 900px) {
+.imageAligner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 10em;
+ }
+}
+
+@media screen and (max-width: 899px) {
+.imageAligner {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 15em;
+ }
+}
+
+@media screen and (min-width: 900px) {
+.box2nd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #02CD02;
+  width: 13em;
+  height: 12em;
+  padding-bottom: 3%;
+  position: relative;
+  margin-top: 5%;
+  top: -17%;
+  left: 3.5%;
+  text-align: center;
+  font-size: 0.69em;
+ }
+
+ .box2nd p {
+     font-size: 0.8em;
+ }
+}
+
+
+@media screen and (max-width: 899px) {
+.box2nd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #02CD02;
+  width: 19em;
+  height: 9em;
+  position: relative;
+  margin-top: 5%;
+  left: 8%;
+  text-align: center;
+  font-size: 0.69em;
+ }
+}
+
+@media screen and (max-width: 899px) {
+#Morespacing {
+  height: 10em;
+}
+}
+@media screen and (min-width: 900px) {
+.lineBreak2 {
+  margin-top: -4%;
+  margin-bottom: -2%;
+  width: 8em;
+  background-color: white;
+  height: 0.05em;
+ }
+}
+
+@media screen and (max-width: 899px) {
+.lineBreak2 {
+  margin-top: -4%;
+  margin-bottom: -3%;
+  width: 8em;
+  background-color: white;
+  height: 0.05em;
+ }
+}
+
+
+@media screen and (min-width: 900px) {
+.button {
+  margin-top: -5%;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  width: 4em;
+  padding: 0.2em 0.5em;
+  border: none;
+ }
+}
+
+@media screen and (max-width: 899px) {
+.button {
+  margin-top: -3%;
+  background-color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  width: 4em;
+  padding: 0.2em 0.5em;
+  border: none;
+ }
+}
+
+.button a {
+  text-decoration: none;
+  color: #02CD02;
+}
+
+
+/* Bottom Heading --> */
+#bottomHeading {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: 2em;
+  background-color: #02CD02;
+  font-size: 0.8em;
+  color: #FFFFFF;
+  text-align: center;
+}

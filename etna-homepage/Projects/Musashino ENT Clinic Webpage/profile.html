@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hospital Profile</title>
+    <meta name="title" content="Musashino ENT">
+    <meta name="description" content="Ear, Nose , Throat, Doctor, English-speaking, Tokyo, 鼻, 耳, 喉, 医者, 口, 東京">
+    <link rel="stylesheet" href="profile.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script src="Script/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+<!-- top part heading -->
+    <header>
+      <a href="index.html"><img src="Images/Home Page/Logo.png" alt=""></a>
+      <p class="header0"><span lang="jp">むさしの耳鼻科</span><span class="ENtitle" lang="en">Musashino ENT&nbsp;</span>
+        <span class="header1"><b><span lang="jp">矢野医院</span><span class="ENtitle2" lang="en">Yano Clinic</span></b></span></p>
+<!-- Language Swap -->
+    <select id="lang-switch">
+        <option class="langswitch-content" value="en">EN</option>
+        <option class="langswitch-content" value="jp" selected>JPN</option>
+    </select>
+<!-- Submenu heading -->
+    <div class="dropdown" style="float:right;">
+     <button class="dropbtn">&#x2630;</button>
+     <div class="dropdown-content">
+       <a href="profile.html"><span lang="jp">&#x25B7; 病院紹介</span><span class="ENdropdown" lang="en">&#x25B7; Hospital Profile</span></a>
+       <a href="treatment.html"><span lang="jp">&#x25B7; 利用可能な治療</span><span class="ENdropdown" lang="en">&#x25B7; Treatment</span></a>
+       <a href="first_time_visit.html"><span lang="jp">&#x25B7; 初診の方へ</span><span class="ENdropdown" lang="en">&#x25B7; First Time Visit</span></a>
+       <a href="faq.html"><span lang="jp">&#x25B7; FAQ</span><span class="ENdropdown" lang="en">&#x25B7; FAQ</span></a>
+       <a href="announcements.html"><span lang="jp">&#x25B7; お知らせ</span><span class="ENdropdown" lang="en">&#x25B7; Announcement</span></a>
+     </div>
+     </div>
+    </header>
+
+<!-- middle header -->
+    <div id="headerpic"></div>
+    <div id="name">
+      <p class="column" id="hospitalname"><span lang="jp">むさしの耳鼻科</span><span lang="en">Musahino ENT</span></p>
+      <p class="column" id="phone">TEL. 0422-52-3932</p>
+    </div>
+	
+	
+<!-- Top Title -->
+<div class="topTitle">
+      <p><span lang="jp">病院紹介</span>
+         <span lang="en">Hospital Profile</span>
+      </p>
+    </div>
+	
+<!-- Title and Text -->
+
+<div class="Title">
+      <p><span lang="jp">一人の医師が担当いたします</span>
+         <span lang="en">Only one doctor is practicing</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">医師は矢野ひとりです。診察の度に担当が違うことはありません。</span>
+
+        <span class="text" lang="en">Only doctor Yano is practicing in this hospital. The person in charge does not change at each examination</span>
+   </div>
+<div class="Title">
+      <p><span lang="jp">バリアフリー</span>
+         <span lang="en">Wheelchair accessible</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">医院は１階にあります。診察室はもちろん、検査室やお化粧室にも車いすやベビーカーのまま、お入りいただけます。</span>
+
+        <span class="text" lang="en">The clinic is on the first floor and barrier-free. You can move around through the examination room, waiting room, and toilets with a wheelchair or stroller without problems.</span>
+   </div>
+<div class="Title">
+      <p><span lang="jp">院外処方です</span>
+         <span lang="en">Out-of-hospital prescription</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">お薬は院外処方です。一般的名称に剤形及び含量を付加した記載「一般名処方」ですから、ジェネリック薬品をご希望の方は、調剤薬局で「ジェネリック」とおっしゃっていただければ、ジェネリック薬品もご利用いただけます。（すべてのお薬にジェネリックがあるわけではありません）</span>
+
+        <span class="text" lang="en">The medicine we are prescribing is an out-of-hospital prescription. Please visit the nearest pharmacy to get your medicine.</span>
+   </div>
+<div class="Title">
+      <p><span lang="jp">内視鏡とAV機器</span>
+         <span lang="en">Endoscope and AV equipment</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">新機種の採用により、喉頭がん検診だけでなく、全身麻酔が必要だった、下咽頭・頸部食道のがん検診も外来でできるようになりました。その他、耳・鼻の検査の様子もテレビモニターで見ることができ、十分な説明と納得（インフォームド・コンセント）に基づいて治療を行います。</span>
+
+        <span class="text" lang="en">With the adoption of the new model, not only laryngeal cancer screening but also cancer screening of the hypopharynx and cervical esophagus, can now be performed without general anesthesia. In addition, the state of ear and nose examination can be seen on the TV monitor, and treatment is performed based on sufficient explanation and consent (informed consent).</span>
+   </div>
+<div class="Title">
+      <p><span lang="jp">院内感染への対応</span>
+         <span lang="en">Response to nosocomial infections</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">検査機器からの感染を防ぐため、全自動ファイバースコープ洗浄機を使用しています。その他の器具も出来るだけ使い捨てとし、院内感染の防止をはかります。</span>
+
+        <span class="text" lang="en">A fully automatic fiberscope washer is used to prevent infection from inspection equipment. Disposable other equipment as much as possible to prevent nosocomial infections.</span>
+   </div>
+<div class="Title">
+      <p><span lang="jp">臨床検査</span>
+         <span lang="en">Laboratory test</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">現代医療では、臨床成績に基づいて、必要以上の抗生物質などを用いないなど、根拠の確かな治療が求められていますーEBM(Evidence Based Medicine)ーこのために、必要に応じ、血液や細菌培養の検査ができる体制です。</span>
+
+        <span class="text" lang="en">In modern medicine, there is a need for evidence-based treatment such as not using more antibiotics than necessary based on clinical results-EBM (Evidence Based Medicine). For this reason, blood taking and examination of bacteria are required, if needed.</span>
+   </div>
+<div class="Title">
+      <p><span lang="jp">聴力・平衡機能検査</span>
+         <span lang="en">Hearing / balance function test</span>
+      </p>
+    </div>
+<div class="textContent">
+     <p><span class="text" lang="jp">身障者認定やメニエール病をはじめとする末梢性めまいの診断、漢方を含めた治療をいたします。めまい外来での脳のMRI検査など、中枢性のめまいの検査も関連病院にご紹介をいたします。</span>
+
+        <span class="text" lang="en">We will certify people with disabilities, diagnose peripheral dizziness such as Meniere's disease, and treat them including Chinese medicine. We will also send patients for an MRI examination of the brain for dizziness to related hospitals.</span>
+   </div>
+   
+  <!-- Director Note --> 
+<div class="Title">
+      <p><span lang="jp">院長より</span>
+         <span lang="en">From the director</span>
+      </p>
+    </div>
+	
+
+    <div class="directorimg">
+       <img id="JPN_director" src="Images/Sub Page/Hospital Profile/Director_s note/JPN Director_s note.png" alt="" style="max-width:100%;height:auto;">
+    </div>
+
+<!-- 1st Title -->
+    <div class="Title">
+      <p><span lang="jp">関連病院</span>
+         <span lang="en">Related Hospital</span>
+      </p>
+    </div>
+
+
+
+<!-- Related Hospital box -->
+
+ <!-- 1st row -->
+  <div class="boxRow">
+
+    <!-- 1st box -->
+    <div class="galleryContainer">
+      <div class="imageAligner">
+       <img src="Images/Sub Page/Hospital Profile/Related Hospital/1.png" alt="">
+      </div>
+      <div class="box2nd">
+          <p><span lang="jp">東京医科⻭科⼤学<br>
+                             医学部附属病院</span>
+             <span lang="en">Tokyo Medical and Dental University<br>
+                             Medical School Hospital</span>
+                           </p>
+              <hr class="lineBreak2">
+          <p><span lang="jp">医療連携⽀援センター</span>
+            <span lang="en">Medical cooperation support center</span>
+          </p>
+             <button class="button"><a href="https://www.tmd.ac.jp/english/">VISIT</a></button>
+      </div>
+    </div>
+
+   <!-- 2nd box -->
+   <div class="galleryContainer">
+     <div class="imageAligner">
+      <img src="Images/Sub Page/Hospital Profile/Related Hospital/2.png" alt="">
+     </div>
+     <div class="box2nd" id="Morespacing">
+         <p><span lang="jp">東京都保健医療公<br>
+                            社大久保病院</span>
+            <span lang="en">Tokyo Metropolitan Health and Medical<br>
+                            Corporation Ohkubo Hospital</span>
+                          </p>
+             <hr class="lineBreak2">
+         <p><span lang="jp">医療連携登録医・手術執刀</span>
+            <span lang="en">Medical cooperation registered doctors and surgical operations</span>
+         </p>
+            <button class="button"><a href="https://www.ohkubohospital.jp/">VISIT</a></button>
+     </div>
+   </div>
+
+ </div>
+
+ <!-- 2nd row -->
+  <div class="boxRow">
+
+      <!-- 3rd box -->
+      <div class="galleryContainer">
+        <div class="imageAligner">
+         <img src="Images/Sub Page/Hospital Profile/Related Hospital/3.png" alt="">
+        </div>
+        <div class="box2nd">
+            <p><span lang="jp">武蔵野赤十字病院</span>
+               <span lang="en">Musashino Red Cross Hospital</span>
+             </p>
+                <hr class="lineBreak2">
+            <p><span lang="jp">日赤社員・病院認定医</span>
+               <span lang="en">JRCS Employee/Hospital Certified Doctor</span>
+            </p>
+               <button class="button"><a href="https://www.musashino.jrc.or.jp/">VISIT</a></button>
+        </div>
+      </div>
+
+      <!-- 4th box -->
+      <div class="galleryContainer">
+        <div class="imageAligner">
+         <img src="Images/Sub Page/Hospital Profile/Related Hospital/4.png" alt="">
+        </div>
+        <div class="box2nd">
+            <p><span lang="jp">杏林大学付属病院</span>
+               <span lang="en">Kyorin University Hospital</span>
+             </p>
+                <hr class="lineBreak2">
+            <p><span lang="jp">病院認定医</span>
+               <span lang="en">Hospital certified doctor</span>
+            </p>
+               <button class="button"><a href="https://www.kyorin-u.ac.jp/hospital/">VISIT</a></button>
+        </div>
+      </div>
+
+  </div>
+
+<!-- Bottom Heading -->
+    <div id="bottomHeading">
+      <p>Copyright© むさしの耳鼻科 Musashino E.N.T.</p>
+    </div>
+
+ </body>
+</html>
