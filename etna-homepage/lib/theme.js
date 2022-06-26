@@ -13,7 +13,7 @@ const components = {
     Heading: {
         variants: {
             'section-title': {
-                TextDecoration: 'underline',
+                textDecoration: 'underline',
                 fontSize: 20,
                 textUnderlineOffset: 6,
                 textDecorationColor: '#525252',
