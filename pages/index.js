@@ -118,9 +118,18 @@ const Page = () => {
             My contacts
         </Heading>
         <Paragraph>
-            {" "}
           <Link href="https://www.linkedin.com/in/nguyen-minh-quan-041332242/">
             Linkedin
+          </Link>
+        </Paragraph>
+        <Paragraph>
+          <Link href="https://github.com/canconan123">
+            Github
+          </Link>
+        </Paragraph>
+        <Paragraph>
+          <Link href="https://www.facebook.com/minhquanlaw">
+            Facebook
           </Link>
         </Paragraph>
       </Section>
