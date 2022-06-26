@@ -1,4 +1,4 @@
-import NextLink from 'next/link'
+import NextLink from "next/link";
 import {
   Button,
   Container,
@@ -6,19 +6,19 @@ import {
   Heading,
   Image,
   Link,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { ChevronRightIcon } from '@chakra-ui/icons'
-import Section from '../components/section'
-import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
+  useColorModeValue,
+} from "@chakra-ui/react";
+import { ChevronRightIcon } from "@chakra-ui/icons";
+import Section from "../components/section";
+import Paragraph from "../components/paragraph";
+import { BioSection, BioYear } from "../components/bio";
 
 const Page = () => {
   return (
-    <Container>
+    <Container maxW="2xl">
       <Box
         borderRadius="lg"
-        bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+        bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
         p={3}
         mb={6}
         align="center"
@@ -26,13 +26,14 @@ const Page = () => {
         Hello, I&apos;m a data analyst based in Japan!
       </Box>
 
-      <Box display={{ md: 'flex' }}>
+      <Box display={{ md: "flex" }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Nguyen Minh Quan
           </Heading>
           <p>Tech Ethusiast ( Manga-reader / Programmer )</p>
         </Box>
+        
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -56,6 +57,7 @@ const Page = () => {
         <Heading as="h3" variant="section-title">
           Work
         </Heading>
+
         <Paragraph>
           My name is Quan, currently a 3rd year student at Tokyo International
           University majoring in Digital Business and Innovations. I am building
@@ -69,35 +71,39 @@ const Page = () => {
           general or Analytical positions.
         </Paragraph>
         <Paragraph>
-          Thank you so much for reading my profile! <br></br>{' '}
+          Thank you so much for reading my profile! <br></br>{" "}
           <Link href="https://www.linkedin.com/in/nguyen-minh-quan-041332242/">
             My Linkedin
           </Link>
         </Paragraph>
+
         <Box align="center" my={4}>
-          <NextLink href={'/works'}>
+          <NextLink href={"/works"}>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My Portfolio
             </Button>
           </NextLink>
         </Box>
+
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" varian="section-title">
-            Bio
+          Bio
         </Heading>
+
         <BioSection>
-            <BioYear>2001</BioYear>
-            Born in Ho Chi Minh (ホーチミン), Viet Nam.
+          <BioYear>2001</BioYear>
+          Born in Ho Chi Minh (ホーチミン), Viet Nam.
         </BioSection>
         <BioSection>
-            <BioYear>2019</BioYear>
-            Entered Tokyo International University with the goal of a 
-            Bachelor&apos;s Degree in Business Economics at Saitama, Japan.
+          <BioYear>2019</BioYear>
+          Entered Tokyo International University with the goal of a
+          Bachelor&apos;s Degree in Business Economics at Saitama, Japan.
         </BioSection>
+
       </Section>
     </Container>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
