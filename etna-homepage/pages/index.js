@@ -10,7 +10,7 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import Section from "../components/section";
-import Paragraph from "../components/paragraph";
+import { Paragraph } from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
 
 const Page = () => {
@@ -31,9 +31,9 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Nguyen Minh Quan
           </Heading>
-          <p>Tech Ethusiast ( Manga-reader / Programmer )</p>
+          <p>Tech Ethusiast ( Digital Consultant / Programmer )</p>
         </Box>
-        
+
         <Box
           flexShrink={0}
           mt={{ base: 4, md: 0 }}
@@ -71,10 +71,7 @@ const Page = () => {
           general or Analytical positions.
         </Paragraph>
         <Paragraph>
-          Thank you so much for reading my profile! <br></br>{" "}
-          <Link href="https://www.linkedin.com/in/nguyen-minh-quan-041332242/">
-            My Linkedin
-          </Link>
+          Thank you so much for reading my profile! <br></br>
         </Paragraph>
 
         <Box align="center" my={4}>
@@ -87,21 +84,48 @@ const Page = () => {
 
       </Section>
       <Section delay={0.2}>
-        <Heading as="h3" varian="section-title">
+        <Heading as="h3" variant="section-title">
           Bio
         </Heading>
 
         <BioSection>
           <BioYear>2001</BioYear>
-          Born in Ho Chi Minh (ホーチミン), Viet Nam.
+          Born in Ho Chi Minh City, Viet Nam.
         </BioSection>
         <BioSection>
           <BioYear>2019</BioYear>
           Entered Tokyo International University with the goal of a
-          Bachelor&apos;s Degree in Business Economics at Saitama, Japan.
+          Bachelor&apos;s Degree in Business Economics at Saitama, Japan.          
         </BioSection>
-
+        <BioSection>
+          <BioYear>2022</BioYear>
+          Finished a 4-month Internship at Adam Innovations working as a 
+          Digital Consultant (DX) helping to solve problems for other businesses.
+        </BioSection>
       </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+            My hobbies
+        </Heading>
+        <Paragraph>
+            Manga, Music, Light Novels, Anime, Video Games, Taking pictures of Food 
+        </Paragraph>
+      </Section>
+
+      <Section delay={0.4}>
+        <Heading as="h3" variant="section-title">
+            My contacts
+        </Heading>
+        <Paragraph>
+            {" "}
+          <Link href="https://www.linkedin.com/in/nguyen-minh-quan-041332242/">
+            Linkedin
+          </Link>
+        </Paragraph>
+      </Section>
+
+      
     </Container>
   );
 };
