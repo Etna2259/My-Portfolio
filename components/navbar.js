@@ -21,6 +21,8 @@ import { AnimatePresence, motion } from "framer-motion";
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
+  const activeColor = useColorModeValue("white", "black")
+  const bgColor = useColorModeValue("purple", "orange")
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       <motion.div
@@ -35,10 +37,8 @@ const LinkItem = ({ href, path, children }) => {
           <NextLink href={href}>
             <Link
               p={2}
-              color={
-                active ? useColorModeValue("white", "black") : inactiveColor
-              }
-              bg={active ? useColorModeValue("purple", "orange") : undefined}
+              color={active ? activeColor : inactiveColor}
+              bg={active ? bgColor : undefined}
             >
               {children}
             </Link>
