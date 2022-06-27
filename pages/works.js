@@ -8,12 +8,12 @@ import thumbEventBot from "../public/images/works/EventBot.png";
 const Works = () => {
   return (
     <Layout>
-      <Container>
+      <Container maxW="2xl">
         <Heading as="h3" fontSize={20} mb={4}>
           Works
         </Heading>
 
-        <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <SimpleGrid gap={6}>
           <Section>
             <WorkGridItem
               id="firstProject"
@@ -34,7 +34,7 @@ const Works = () => {
           </Heading>
         </Section>
 
-        <SimpleGrid column={[1, 1, 2]} gap={6}>
+        <SimpleGrid gap={6}>
           <Section delay={0.2}>
             <WorkGridItem
               id="LA-Event-Bot"

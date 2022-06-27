@@ -125,21 +125,37 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             My contacts
           </Heading>
-          <Paragraph>
-            <Link href="https://www.linkedin.com/in/nguyen-minh-quan-041332242/">
-              <Icon as={GrLinkedin} /> Linkedin
-            </Link>
-          </Paragraph>
-          <Paragraph>
-            <Link href="https://github.com/canconan123">
-              <Icon as={GrGithub} /> Github
-            </Link>
-          </Paragraph>
-          <Paragraph>
-            <Link href="https://www.facebook.com/minhquanlaw">
-              <Icon as={GrFacebook} /> Facebook
-            </Link>
-          </Paragraph>
+          <Box align="center" my={1}>
+            <NextLink
+              href={"https://www.linkedin.com/in/nguyen-minh-quan-041332242/"}
+            >
+              <Button
+                leftIcon={<GrLinkedin />}
+                variant="ghost"
+                colorScheme="teal"
+              >
+                Linkedin
+              </Button>
+            </NextLink>
+            <NextLink href={"https://github.com/canconan123"}>
+              <Button
+                leftIcon={<GrGithub />}
+                variant="ghost"
+                colorScheme="teal"
+              >
+                Github
+              </Button>
+            </NextLink>
+            <NextLink href={"https://www.facebook.com/minhquanlaw"}>
+              <Button
+                leftIcon={<GrFacebook />}
+                variant="ghost"
+                colorScheme="teal"
+              >
+                Facebook
+              </Button>
+            </NextLink>
+          </Box>
         </Section>
       </Container>
     </Layout>
