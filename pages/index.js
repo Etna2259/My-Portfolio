@@ -10,11 +10,13 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
+
 import Layout from "../components/layouts/article";
 import Section from "../components/section";
 import { Paragraph } from "../components/paragraph";
 import { BioSection, BioYear } from "../components/bio";
-import { GrLinkedin } from "react-icons/gr";
+
+import { GrLinkedin, GrGithub, GrFacebook } from "react-icons/gr";
 
 const Page = () => {
   return (
@@ -129,10 +131,14 @@ const Page = () => {
             </Link>
           </Paragraph>
           <Paragraph>
-            <Link href="https://github.com/canconan123">Github</Link>
+            <Link href="https://github.com/canconan123">
+              <Icon as={GrGithub} /> Github
+            </Link>
           </Paragraph>
           <Paragraph>
-            <Link href="https://www.facebook.com/minhquanlaw">Facebook</Link>
+            <Link href="https://www.facebook.com/minhquanlaw">
+              <Icon as={GrFacebook} /> Facebook
+            </Link>
           </Paragraph>
         </Section>
       </Container>
