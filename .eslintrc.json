@@ -1,6 +1,6 @@
 {
     "root": true,
-    "extends": ["esnext", "esnext/style-guide", "node", "node/style-guide", "react-native", "react-native/style-guide"],
+    "extends": "next",
     "rules": {
       "no-unused-vars": [
         "error",
