@@ -1,5 +1,6 @@
 import NextLink from "next/link";
 import {
+  Link,
   Button,
   Container,
   Box,
@@ -44,6 +45,7 @@ const Page = () => {
             ml={{ md: 6 }}
             align="center"
           >
+            <Link href="https://twitter.com/zo3mie/status/1537721734480424962?s=20&t=NkZxgPzXh_j9A8lTejDMfg">
             <Image
               borderColor="whiteAlpha.800"
               borderWidth={2}
@@ -54,6 +56,7 @@ const Page = () => {
               src="/images/mayano.png"
               alt="Profile Image"
             />
+            </Link>
           </Box>
         </Box>
 
@@ -68,8 +71,8 @@ const Page = () => {
             building my skillset aiming to become a Data Analyst or Data
             Scientist position. I have been learning Python, R and Tableau for
             close to 2 years with experience in Data Visualizations and
-            Statistics. Aside from that, I am also interested in HTML/CSS and
-            Javascript as well.
+            Statistics. Aside from that, I started taking an interest in React.js,
+            Next.js which is the foundation of page that you are checking out right now :)
           </Paragraph>
           <Paragraph>
             I wish to get more internships with relates to the IT fields in
