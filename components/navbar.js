@@ -17,6 +17,7 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 import { AnimatePresence, motion } from "framer-motion";
+import { useRouter } from 'next/router';
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
