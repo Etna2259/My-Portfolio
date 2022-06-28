@@ -37,7 +37,7 @@ const Works = () => {
         <SimpleGrid gap={6}>
           <Section delay={0.2}>
             <WorkGridItem
-              id="LA-Event-Bot"
+              id="eventBot"
               title="Lost Ark Event Bot"
               thumbnail={thumbEventBot}
             >

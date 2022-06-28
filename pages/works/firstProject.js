@@ -1,9 +1,12 @@
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import NextLink from 'next/link'
+import { GrGithub } from "react-icons/gr";
 import {
   Container,
   Badge,
   Link,
   List,
+  Button,
   ListItem,
   UnorderedList,
 } from "@chakra-ui/react";
@@ -18,10 +21,11 @@ const Work = () => (
         My First Webpage <Badge>2021/6</Badge>
       </Title>
       <Paragraph>
-        This is a Clinic webpage redesigned in a group project in a course work
-        back in 2021/6. Features of this page includes:
+        This is a Clinic office webpage redesigned in a group project in a
+        university course work back in 2021/6. Features of this page includes:
       </Paragraph>
-      <UnorderedList ml={6} my={4}>
+
+      <UnorderedList ml={8} my={4}>
         <ListItem>
           Interactive in-page map showing the clinic's location
         </ListItem>
@@ -36,10 +40,40 @@ const Work = () => (
           Optimizied for both Desktop and Mobile devices viewing experience
         </ListItem>
       </UnorderedList>
+
       <Paragraph>
-        This page is special because it is my first independent project working
-        with web development
+        This page is special because it is my first project working with web
+        development
       </Paragraph>
+
+      <List ml={6} my={4}>
+        <ListItem>
+          <Meta>Website</Meta>
+          <Link href="https://etna2259.github.io/First-Web-Project/">
+            https://etna2259.github.io/<ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Stack</Meta>
+          <span>HTML5, CSS3, Javascript</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Source Code</Meta>
+          <NextLink href={"https://github.com/Etna2259/First-Web-Project"}>
+              <Button
+                leftIcon={<GrGithub />}
+                variant="ghost"
+                colorScheme="teal"
+              >
+                Github
+              </Button>
+            </NextLink>
+        </ListItem>
+      </List>
+
+      <WorkImage src="/images/works/Musashino01.png" alt="firstProject" />
+      <WorkImage src="/images/works/Musashino02.png" alt="firstProject" />
+      
     </Container>
   </Layout>
 );
