@@ -138,7 +138,7 @@ const Page = () => {
                 Linkedin
               </Button>
             </NextLink>
-            <NextLink href={"https://github.com/canconan123"}>
+            <NextLink href={"https://github.com/etna2259"}>
               <Button
                 leftIcon={<GrGithub />}
                 variant="ghost"
