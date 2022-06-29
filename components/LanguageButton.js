@@ -12,7 +12,7 @@ import {
 import { MdTranslate } from "react-icons/md";
 import { AnimatePresence, motion } from "framer-motion";
 import { React } from "react";
-import AppContext from "../pages/AppContext";
+import AppContext from "../AppContext";
 import { useContext } from "react";
 
 export default function LanguageToggleButton() {

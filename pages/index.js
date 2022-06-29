@@ -18,7 +18,7 @@ import NextLink from "next/link";
 import React from "react";
 
 import { useContext } from "react";
-import AppContext from "./AppContext";
+import AppContext from "../AppContext";
 
 const Page = () => {
   const value = useContext(AppContext);

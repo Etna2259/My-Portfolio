@@ -6,7 +6,7 @@ import thumbFirstProject from "../public/images/works/MusashinoENT.png";
 import thumbEventBot from "../public/images/works/EventBot.png";
 
 import { useContext } from "react";
-import AppContext from "./AppContext";
+import AppContext from "../AppContext";
 
 const Works = () => {
   const value = useContext(AppContext);

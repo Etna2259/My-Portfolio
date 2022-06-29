@@ -16,7 +16,7 @@ import { Paragraph } from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 
 import { useContext } from "react";
-import AppContext from "../AppContext";
+import AppContext from "../../AppContext";
 
 const Work = () => {
   const value = useContext(AppContext);

@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Navbar from '../navbar.js'
 import { Box, Container } from '@chakra-ui/react'
-import AppContext from "../../pages/AppContext";
 import localization from "../localization";
 import { useState } from "react";
+import AppContext from '../../AppContext.js';
 
 const Main = ({ children, router}) => {
     const [languageSelected, setLanguageSelected] = useState("en");
