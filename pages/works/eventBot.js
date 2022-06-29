@@ -18,7 +18,7 @@ import Layout from "../../components/layouts/article";
 
 const Work = () => (
   <Layout title="Lost Ark Event Bot">
-    <Container>
+    <Container maxW="container.md">
       <Title>
         Lost Ark Event Bot <Badge>2022/2</Badge>
       </Title>

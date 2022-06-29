@@ -16,7 +16,7 @@ import Layout from "../../components/layouts/article";
 
 const Work = () => (
   <Layout title="My First Webpage">
-    <Container>
+    <Container maxW="container.md">
       <Title>
         My First Webpage <Badge>2021/6</Badge>
       </Title>

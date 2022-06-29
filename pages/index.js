@@ -6,6 +6,7 @@ import {
   Box,
   Heading,
   Image,
+  Text,
   useColorModeValue,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
@@ -20,7 +21,7 @@ import { GrLinkedin, GrGithub, GrFacebook } from "react-icons/gr";
 const Page = () => {
   return (
     <Layout>
-      <Container maxW="2xl">
+      <Container maxW="container.sm">
         <Box
           borderRadius="lg"
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
@@ -46,16 +47,16 @@ const Page = () => {
             align="center"
           >
             <Link href="https://twitter.com/zo3mie/status/1537721734480424962?s=20&t=NkZxgPzXh_j9A8lTejDMfg">
-            <Image
-              borderColor="whiteAlpha.800"
-              borderWidth={2}
-              borderStyle="Solid"
-              maxWidth="100px"
-              display="inline-block"
-              borderRadius="full"
-              src="/images/mayano.png"
-              alt="Profile Image"
-            />
+              <Image
+                borderColor="whiteAlpha.800"
+                borderWidth={2}
+                borderStyle="Solid"
+                maxWidth="100px"
+                display="inline-block"
+                borderRadius="full"
+                src="/images/mayano.png"
+                alt="Profile Image"
+              />
             </Link>
           </Box>
         </Box>
@@ -64,15 +65,20 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-
+          
           <Paragraph>
+          <Text
+            fontSize={{ base: "18px", md: "21px"}}
+          >
             My name is Quan, currently a 3rd year student at Tokyo International
             University majoring in Digital Business and Innovations. I am
             building my skillset aiming to become a Data Analyst or Data
             Scientist position. I have been learning Python, R and Tableau for
             close to 2 years with experience in Data Visualizations and
-            Statistics. Aside from that, I started taking an interest in React.js,
-            Next.js which is the foundation of page that you are checking out right now :)
+            Statistics. Aside from that, I started taking an interest in
+            React.js, Next.js which is the foundation of page that you are
+            checking out right now :)
+          </Text>
           </Paragraph>
           <Paragraph>
             I wish to get more internships with relates to the IT fields in
