@@ -24,7 +24,7 @@ const Main = ({ children, router}) => {
                 <title>Nguyen Minh Quan - Homepage</title>
             </Head>
 
-            <Navbar path={router.asPath} />
+      <Navbar path={router.asPath} />
 
             <Container maxW="container.md" pt={20}>
                 {children}
@@ -34,4 +34,4 @@ const Main = ({ children, router}) => {
     )
 }
 
-export default Main
+export default Main;
