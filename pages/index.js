@@ -22,7 +22,7 @@ const Page = () => {
   return (
     <Layout>
       <Container maxW="container.sm">
-        <Text fontSize={{ base: "18px", md: "21px" }}>
+        <Text fontSize={{ base: "15px", md: "21px" }}>
           <Box
             borderRadius="lg"
             bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}

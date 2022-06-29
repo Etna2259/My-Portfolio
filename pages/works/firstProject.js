@@ -18,7 +18,7 @@ import Layout from "../../components/layouts/article";
 const Work = () => (
   <Layout title="My First Webpage">
     <Container maxW="container.md">
-      <Text fontSize={{ base: "18px", md: "21px" }}>
+      <Text fontSize={{ base: "15px", md: "21px" }}>
         <Title>
           My First Webpage <Badge>2021/6</Badge>
         </Title>

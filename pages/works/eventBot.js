@@ -19,7 +19,7 @@ import Layout from "../../components/layouts/article";
 const Work = () => (
   <Layout title="Lost Ark Event Bot">
     <Container maxW="container.md">
-      <Text fontSize={{ base: "18px", md: "21px" }}>
+      <Text fontSize={{ base: "15px", md: "21px" }}>
         <Title>
           Lost Ark Event Bot <Badge>2022/2</Badge>
         </Title>
