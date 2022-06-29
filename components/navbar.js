@@ -17,12 +17,14 @@ import {
 import { HamburgerIcon } from "@chakra-ui/icons";
 import ThemeToggleButton from "./theme-toggle-button";
 import { AnimatePresence, motion } from "framer-motion";
+import { React } from "react";
+import LanguageToggleButton from "./LanguageButton";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
-  const activeColor = useColorModeValue("white", "black")
-  const bgColor = useColorModeValue("purple", "orange")
+  const activeColor = useColorModeValue("white", "black");
+  const bgColor = useColorModeValue("purple", "orange");
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       <motion.div
@@ -91,7 +93,9 @@ const Navbar = (props) => {
             Posts
           </LinkItem>
         </Stack>
+
         <Box flex={1} align="right">
+          <LanguageToggleButton />
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: "inline-block", md: "none" }}>
@@ -112,7 +116,10 @@ const Navbar = (props) => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
-                <MenuItem as={Link} href="https://github.com/etna2259/My-Portfolio">
+                <MenuItem
+                  as={Link}
+                  href="https://github.com/etna2259/My-Portfolio"
+                >
                   View Source
                 </MenuItem>
               </MenuList>

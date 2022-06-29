@@ -5,23 +5,35 @@ import Layout from "../components/layouts/article";
 import thumbFirstProject from "../public/images/works/MusashinoENT.png";
 import thumbEventBot from "../public/images/works/EventBot.png";
 
+import { useContext } from "react";
+import AppContext from "./AppContext";
+
 const Works = () => {
+  const value = useContext(AppContext);
+  let {
+    workHeading1,
+    workWork1,
+    workParagraph1,
+    workHeading2,
+    workCollab1,
+    collabParagraph1,
+  } = value.state.languages;
+
   return (
     <Layout>
       <Container maxW="2xl">
         <Heading as="h3" fontSize={20} mb={4}>
-          Works
+          {workHeading1}
         </Heading>
 
         <SimpleGrid gap={6}>
           <Section>
             <WorkGridItem
               id="firstProject"
-              title="My First Webpage"
+              title={workWork1}
               thumbnail={thumbFirstProject}
             >
-              A clinic webpage I made back in 2021 when i started learning about
-              HTML/CSS and Javascript
+              {workParagraph1}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
@@ -30,7 +42,7 @@ const Works = () => {
           <Divider my={6} />
 
           <Heading as="h3" fontSize={20} mb={4}>
-            Collaborations
+            {workHeading2}
           </Heading>
         </Section>
 
@@ -38,11 +50,10 @@ const Works = () => {
           <Section delay={0.2}>
             <WorkGridItem
               id="eventBot"
-              title="Lost Ark Event Bot"
+              title={workCollab1}
               thumbnail={thumbEventBot}
             >
-              I assisted a friend in making an automatic notifier bot for events
-              in Lost Ark
+              {collabParagraph1}
             </WorkGridItem>
           </Section>
         </SimpleGrid>
