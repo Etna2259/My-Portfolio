@@ -15,7 +15,7 @@ import { React } from "react";
 import AppContext from "../AppContext";
 import { useContext } from "react";
 
-export default function LanguageToggleButton() {
+const LanguageToggleButton = () => {
   const value = useContext(AppContext);
 
   return (
@@ -28,7 +28,7 @@ export default function LanguageToggleButton() {
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <Box ml={2} display={{ base: "inline-block", md: "none" }}>
+        <Box ml={2} display={{ base: "inline-block" }}>
           <Menu>
             <MenuButton
               as={IconButton}
@@ -52,4 +52,6 @@ export default function LanguageToggleButton() {
       </motion.div>
     </AnimatePresence>
   );
-}
+};
+
+export default LanguageToggleButton;
