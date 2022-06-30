@@ -9,6 +9,7 @@ import {
   Flex,
   Menu,
   MenuItem,
+  Button,
   MenuList,
   MenuButton,
   IconButton,
@@ -19,7 +20,7 @@ import ThemeToggleButton from "./theme-toggle-button";
 import { AnimatePresence, motion } from "framer-motion";
 import { React } from "react";
 import LanguageToggleButton from "./LanguageButton";
-import IoLogoGithub from "react-icons/io"
+import { GrGithub } from "react-icons/gr";
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
@@ -93,8 +94,13 @@ const Navbar = (props) => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
+          <NextLink href={"https://github.com/etna2259/My-Portfolio"}>
+            <Button leftIcon={<GrGithub />} variant="solid" colorScheme="teal">
+              Source
+            </Button>
+          </NextLink>
         </Stack>
-        
+
         <Box flex={1} align="right">
           <LanguageToggleButton />
           <ThemeToggleButton />
