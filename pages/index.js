@@ -138,7 +138,7 @@ const Page = () => {
                   variant="ghost"
                   colorScheme="teal"
                 >
-                  Linkedin
+                  LinkedIn
                 </Button>
               </NextLink>
               <NextLink href={"https://github.com/etna2259"}>
