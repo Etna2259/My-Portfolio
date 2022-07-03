@@ -12,7 +12,7 @@ import {
   Container,
   OrderedList,
 } from "@chakra-ui/react";
-import { Title, WorkImage, Meta } from "../../components/work";
+import { Title2, WorkImage, Meta } from "../../components/work";
 import { Paragraph } from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 
@@ -38,10 +38,10 @@ const Work = () => {
     <Layout title="Lost Ark Event Bot">
       <Container>
         <Text fontSize={{ base: "15px", md: "21px" }}>
-          <Title>
+          <Title2>
             {ebTitle}
             <Badge>2022/2</Badge>
-          </Title>
+          </Title2>
           <Paragraph>{ebParagraph1}</Paragraph>
           <Paragraph>{ebParagraph2}</Paragraph>
 
