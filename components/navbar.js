@@ -22,6 +22,9 @@ import { React } from "react";
 import LanguageToggleButton from "./LanguageButton";
 import { GrGithub } from "react-icons/gr";
 
+import { useContext } from "react";
+import AppContext from "../AppContext";
+
 const LinkItem = ({ href, path, children }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue("gray200", "whiteAlpha.900");
@@ -55,6 +58,8 @@ const LinkItem = ({ href, path, children }) => {
 
 const Navbar = (props) => {
   const { path } = props;
+  const value = useContext(AppContext);
+  let { navHome, navWork, navPost, navSource } = value.state.languages;
 
   return (
     <Box
@@ -89,14 +94,14 @@ const Navbar = (props) => {
           mt={{ base: 4, nmd: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            {navWork}
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            {navPost}
           </LinkItem>
           <NextLink href={"https://github.com/etna2259/My-Portfolio"}>
             <Button leftIcon={<GrGithub />} variant="solid" colorScheme="teal">
-              Source
+              {navSource}
             </Button>
           </NextLink>
         </Stack>
@@ -115,19 +120,20 @@ const Navbar = (props) => {
               ></MenuButton>
               <MenuList>
                 <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
+                  <MenuItem as={Link}>{navHome}</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                  <MenuItem as={Link}>{navWork}</MenuItem>
                 </NextLink>
                 <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
+                  <MenuItem as={Link}>{navPost}</MenuItem>
                 </NextLink>
                 <MenuItem
+                  icon={<GrGithub />}
                   as={Link}
                   href="https://github.com/etna2259/My-Portfolio"
                 >
-                  View Source
+                  {navSource}
                 </MenuItem>
               </MenuList>
             </Menu>
