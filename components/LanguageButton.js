@@ -28,7 +28,7 @@ const LanguageToggleButton = () => {
         exit={{ y: 20, opacity: 0 }}
         transition={{ duration: 0.2 }}
       >
-        <Box ml={2} display={{ base: "inline-block" }}>
+        <Box display={{ base: "inline-block"}}>
           <Menu>
             <MenuButton
               as={IconButton}
@@ -40,10 +40,10 @@ const LanguageToggleButton = () => {
               {" "}
             </MenuButton>
             <MenuList>
-              <Button mr={1} onClick={() => value.setLanguageSelected("en")}>
+              <Button onClick={() => value.setLanguageSelected("en")}>
                 <MenuItem as={Link}>English</MenuItem>
               </Button>
-              <Button onClick={() => value.setLanguageSelected("jp")}>
+              <Button ml={1} onClick={() => value.setLanguageSelected("jp")}>
                 <MenuItem as={Link}>日本語</MenuItem>
               </Button>
             </MenuList>

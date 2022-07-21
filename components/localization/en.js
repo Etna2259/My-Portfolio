@@ -1,4 +1,10 @@
 export default {
+  //Navigation options
+  navWork: "Works",
+  navPost: "Posts",
+  navSource: "Source",
+  navHome: "About",
+
   //Index Page
   changeLocale: "EN",
   indexIntro: "Hello, I'm a data analyst based in Japan!",
@@ -24,7 +30,7 @@ export default {
   workCollab1: "Lost Ark Event Bot",
   collabParagraph1: "I assisted a friend in making an automatic notifier bot for events in Lost Ark",
 
-  //firstProject.js
+  //Work - firstProject.js
   fpTitle: "My First Webpage",
   fpParagraph1: "This is a Clinic office webpage redesigned in a group project in a university course work back in 2021/6. Features of this page includes:",
   fpList1: "Interactive in-page map showing the clinic's location",
@@ -33,7 +39,7 @@ export default {
   fpList4: "Optimized for both Desktop and Mobile devices viewing experience",
   fpParagraph2: "This page is special because it is my first project working with web development",
 
-  //eventBot.js
+  //Work - eventBot.js
   ebTitle: "Lost Ark Event Bot",
   ebParagraph1: "I assisted my friend @soulden1202 in making an Event Bot designed for Discord announcement about in-game events occuring in Lost Ark. Lost Ark is a MMORPG online game that has many 'World Activites' that occurs during specific in-game time which is cumbersome to keep track of. In order to solve that, he decided to make a bot that would notify everyone in the server automatically.",
   ebParagraph2: "Features of it includes:",
@@ -44,4 +50,9 @@ export default {
   ebList5: "Special in-game events",
   ebList6: "Allows for automatic tagging of Event Tags to notify users before X period of time",
   ebParagraph3: "Deployment requires dedicated server hosting",
+
+  //Posts Page
+  postHeading1: "Timeline",
+  postPost1: "This website and React.js",
+  postParagraph1: "How this webpage came to be and my thoughts about full-stack dev",
 };

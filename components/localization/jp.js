@@ -1,4 +1,10 @@
 export default {
+  //Navigation options
+  navWork: "作品",
+  navPost: "記事",
+  navSource: "ソース",
+  navHome: "ホーム",
+   
   //Index Page
   changeLocale: "JP",
   indexIntro: "こんにちは、私は日本を拠点とするデータアナリストです！",
@@ -24,7 +30,7 @@ export default {
   workCollab1: "ロストアークイベントボット",
   collabParagraph1: "ロストアークのイベント用の自動通知ボットを作成する際に友人を支援しました",
 
-  //firstProject.js
+  //Work - firstProject.js
   fpTitle: "最初のウェブページ",
   fpParagraph1: "これは、2021/6年に大学のコースでグループプロジェクトで再設計されたクリニックのオフィスのWebページです。 このページの機能は次のとおりは：",
   fpList1: "クリニックの場所を示すインタラクティブなページ内マップ",
@@ -33,7 +39,7 @@ export default {
   fpList4: "デスクトップデバイスとモバイルデバイスの両方の表示エクスペリエンスに最適化",
   fpParagraph2: "このページは、Web開発を扱う最初のプロジェクトであるため特別です。",
 
-  //eventBot.js
+  //Work - eventBot.js
   ebTitle: "ロストアークイベントボット",
   ebParagraph1: "ロストアークで発生するゲーム内イベントに関するDiscordアナウンス用に設計されたイベントボットを作成する際に友人@soulden1202を支援しました。ロストアークは、面倒な特定のゲーム内時間中に発生する多くの「ワールドアクティビティ」を含むMMORPGオンラインゲームです。 追跡します。 それを解決するために、彼はサーバー内の全員に自動的に通知するボットを作成することにしました。",
   ebParagraph2: "その機能は次のとおりは：",
@@ -44,4 +50,9 @@ export default {
   ebList5: "特別なゲーム内イベント",
   ebList6: "イベントタグの自動タグ付けを可能にして、X期間前にユーザーに通知します",
   ebParagraph3: "展開には専用サーバーホスティングが必要です",
+
+   //Posts Page
+   postHeading1: "タイムライン",
+   postPost1: "このウェブサイトとReact.js",
+   postParagraph1: "どうしてこのウェブサイトを作られるとフルスタック開発に関して僕の想い",
 };
