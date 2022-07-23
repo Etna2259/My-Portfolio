@@ -4,3 +4,6 @@ export const Paragraph = styled.p`
   text-align: justify;
   text-indent: 1em;
 `
+export const Conclusion = styled.p`
+  text-align: right;
+`

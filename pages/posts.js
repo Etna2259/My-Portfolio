@@ -22,7 +22,7 @@ const Posts = () => {
           <SimpleGrid gap={6}>
             <Heading variant="timeline">
               <BioSection>
-                <BioYear>2022/7</BioYear>
+                <BioYear>2022/7/1</BioYear>
               </BioSection>
             </Heading>
 

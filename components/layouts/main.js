@@ -2,6 +2,8 @@ import Head from "next/head";
 import Navbar from "../navbar.js";
 import { Box, Container } from "@chakra-ui/react";
 import localization from "../localization";
+import Footer from '../footer'
+
 import { useState } from "react";
 import AppContext from "../../AppContext.js";
 
@@ -29,6 +31,8 @@ const Main = ({ children, router }) => {
 
         <Container maxW="container.md" pt={20}>
           {children}
+          
+          <Footer />
         </Container>
       </Box>
     </AppContext.Provider>
