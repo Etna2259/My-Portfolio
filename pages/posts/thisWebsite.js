@@ -1,18 +1,11 @@
-import { ExternalLinkIcon } from "@chakra-ui/icons";
-import NextLink from "next/link";
-import { GrGithub } from "react-icons/gr";
 import {
   Container,
   Text,
   Badge,
   Link,
-  List,
-  Button,
-  ListItem,
-  UnorderedList,
   Box,
 } from "@chakra-ui/react";
-import { Title3, WorkImage, Meta } from "../../components/work";
+import { Title3, WorkImage} from "../../components/work";
 import { Paragraph, Conclusion } from "../../components/paragraph";
 import Layout from "../../components/layouts/article";
 
